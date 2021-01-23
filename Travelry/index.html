@@ -5,66 +5,69 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.15.0-web/fontawesome-free-5.15.0-web copy/css/all.css">
+    <meta charset="UTF-8">  <!-- From Intro to HTML5 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <header>
-        <!--<div class="rvmenu">-->
-            <a href="#"><img src="images/logo/Reservia.svg"></a>
-            <ul>
-                <li><a href="#rvaccom" class="rvaccom">Accommodations</a></li>
-                <li><a href="#rvactiv" class="rvactiv">Activities    </a></li>
-            </ul>
-            <a href="#" class="rvsignup"><strong>Sign Up</strong></a>
-        <!--</div>-->
-        <!--<div class="rvmenu">
-            <div class="rvlogo"><img src="images/logo/Reservia.svg"></div>
-            <div><button class="rvaccom"  type="button">Accommodations</button></div>
-            <div><button class="rvactiv"  type="button">Activities    </button></div>
-            <div><button class="rvsignup" type="button">              </button></div>
-            <div><button class="rvsignup" type="button">Sign Up       </button></div>
-        </div>-->
-    </header>    
+        <!-- USE THIS CODING FOR WHEN SCREEN SIZE IS LARGER-->
+        <a href="#"><img class="logo" src="images/logo/Reservia.svg"></a>
+        <div class="menu"> 
+            <a href="#accommodations" class="rvaccom">Accommodations</a>
+            <a href="#activities"     class="rvactiv">Activities    </a>
+        </div>
+        <a href="#" class="signup"><strong>Sign Up</strong></a>
+        <!-- -->
+        <!-- USE THIS CODING FOR WHEN SCREEN SIZE IS SMALLER 
+        <a href="#"><img class="logo" src="images/logo/Reservia.svg"></a>
+        <div class="menu"> 
+            <a href="#accommodations" class="rvaccom">Accommodations</a>
+            <a href="#activities"     class="rvactiv">Activities    </a>
+        </div>
+        <a href="#" class="signup"><strong>Sign Up</strong></a>
+         -->
+    </header> 
     <nav>
         <h2>Find a place for your dream vacation</h2>
-
+        <br>
         <h4>Downtown or in nature</h4>
-
-        <div class="rvdest">
-                        <!--</strong><img src="images/map-marker-alt-solid.svg" height="16"></button></div> -->
-            <div><button class="mapmarker" type="button"><strong><img src="images/map-marker-alt-solid.svg" height="16"></strong></button></div>
-            <div><button class="rvwhere"   type="button"><strong>Marseilles, France                                    </strong></button></div>
-            <div><button class="rvsearch"  type="button"><strong>Search                                                 </strong></button></div>
+        <br>
+        <div class="destination">
+            <div><button class="mapmarker" type="button"><strong><img src="images/map-marker-alt-solid.svg"></strong></button></div>
+            <div><button class="whereto"   type="button"><strong>Marseilles, France                                    </strong></button></div>
+            <div><button class="searchit"  type="button"><strong>Search                                                 </strong></button></div>
         </div>
-
-            <div class="rvfilters">
-            <h3><strong>Filters</strong></h3>
-            <div class="rvbill ">
-                <div><button class="bill" type="button"><i class="fas fa-money-bill-wave-alt"></i></div>
-                <div class="lowcost"><strong>Low cost</strong></div></button>
+        <br>
+        <h3><strong>Filters</strong></h3>
+        <div class="filters">
+            <div class="filter">
+                <div><button class="iconic" type="button"><i class="fas fa-money-bill-wave-alt"></i></div>
+                <div class="banner"><strong>Low cost</strong></div></button>
             </div>
-            <div class="rvbill">
-                <div><button class="bill" type="button"><i class="fas fa-child"></i></div>
-                <div class="lowcost"><strong>Family-friendly</strong></div>
+            <div class="filter">
+                <div><button class="iconic" type="button"><i class="fas fa-child"></i></div>
+                <div class="banner"><strong>Family-friendly</strong></div>
             </div>
-            <div class="rvbill">
-                <div><button class="bill" type="button"><i class="fas fa-heart"></i></div>
-                <div class="lowcost"><strong>Romantic       </strong></div>
+            <div class="filter">
+                <div><button class="iconic" type="button"><i class="fas fa-heart"></i></div>
+                <div class="banner"><strong>Romantic       </strong></div>
             </div>
-            <div class="rvbill">
-                <div><button class="bill" type="button"><i class="fas fa-dog"></i></div>
-                <div class="lowcost"><strong>Pets allowed   </strong></div>
+            <div class="filter">
+                <div><button class="iconic" type="button"><i class="fas fa-dog"></i></div>
+                <div class="banner"><strong>Pets allowed   </strong></div>
                 </button>
             </div>
         </div>
 
-        <div class="rvstock">
-            <div><button class="info"><img src="images/info-solid.svg" height="10"></button></div>
-            <div class="count"><strong>More than 500 accomodations are available in this location</strong></div>
+        <div class="stock">
+                <i class="fas fa-info"><strong>More than 500 accomodations are available in this location</strong></i>
+            
         </div>
     </nav>
     <div class="rvmedley">
         <div class="rvwrap">
-            <div class="citytitle">
+            <div class="citytitle" id="accommodations">
                 <p><strong>Accommodations in Marseilles</strong><br>
                 </p>
             </div> 
@@ -211,7 +214,7 @@
     </div>
     <div class="rvactmedley">
         <div class="rvacts">
-            <div class="citytitle">
+            <div class="citytitle" id="activities">
                 <p><br><strong>Activites in Marseilles</strong><br></p>
             </div>
             <article class="citys" id="activ1" type="button">
@@ -265,6 +268,7 @@
         </div>
         <div><br><br></div>
     </div>
+        -->
     <footer>
         <div class="rvfoot">
             <article class="rvfoot1">
@@ -288,6 +292,5 @@
         </div>
 
     </footer>
-
 </body>    
 </html>

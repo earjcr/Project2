@@ -1,82 +1,91 @@
 * {
     box-sizing: border-box;
-    margin-left: 3px;
+    margin: 0px;
     padding:0px;
     }
 body {
     width: 100%;
     background-color: white;
     font-family: Raleway;
-    }    
+    font-size: 1.2em;
+}    
 nav {
+    margin-left: 15px;
     width: 100%;
     }
 section {
     width: 100%;
     }
-.rvmenu {
+.menu {
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap-reverse;
-    position: relative;
-/*    top: -36px;*/
+    justify-content: center;
     }
-.rvlogo {
-    position: absolute;
-    left: 0; 
-    top: 0;   
-    border: none;
-    width: 110px;
-    height: 36px;
-    background-color: white;
+@media only screen and (min-width: 700px) {
+    .menu {
+        position: absolute;
+        top: 18px;
+        right: 130px;
+        display: flex;
+        justify-content: center;
+        }
     }
+.logo {
+    margin: 20px 0px 20px 30px;
+    text-align: left;
+}
 .rvaccom {
     color: #0065FC;
     font-family: Helvetica;
-    font-size: 1rem;
-    line-height: 1.5;
     width: 180px;
-    padding: 10px;
-    background-color: white;
-    border-color: blue white white white;
-    border-right: none;
-    border-bottom: none;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color:#0065FC
     }
-.rvaccom:hover {
-    background-color: red;
+@media only screen and (min-width:700px) {
+    .rvaccom {
+        color: #0065FC;
+        font-family: Helvetica;
+        width: 180px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        text-decoration: none;
+        border-top-style: solid;
+        border-top-color:#0065FC;
+        border-bottom-color: white;
+        }
     }
 .rvactiv {
     color: black;
     font-family: Helvetica;
-    font-size: 1rem;
-    line-height: 1.5;
     width: 180px;
-    padding: 10px;
-    background-color: white;
-    border-top-color: grey;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+@media only screen and (min-width:700px) {
+    .rvactiv {
+        color: black;
+        font-family: Helvetica;
+        width: 180px;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        text-decoration: none;
+        border-top-style: solid;
+        border-top-color: black;
+        border-bottom-color: white;
     }
-.rvactiv:hover {
-    background-color: red;
-    }
-.rvsignup {
+}
+.signup {
     position: absolute;
     top: 0px;
-    right: 20px;
+    right: 30px;
+    padding: 30px 0 0 0;
     color: #0065FC;
-    background-color: white;
-    font-family: Raleway;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
-    width: 110px;
-    height: 41px;
-    padding: 35px 0 0 0;
-    }
-.rvsignup:hover {
-    background-color: red;
+    text-decoration: none;
     }
 h2  {
     font-family: Raleway;
@@ -88,7 +97,7 @@ h4 {
 /* body */
 /* h */
 
-.rvdest {
+.destination {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -98,6 +107,7 @@ h4 {
     width: 40px;
     border: 1px solid white;
     line-height: 2.5;
+    font-size: 1em;
     align-items: center;
     padding: 15px;
     color: black;
@@ -107,29 +117,31 @@ h4 {
 .mapmarker:hover {
     background-color: red;
     }
-.rvwhere {
+.whereto {
     border: 1px solid white;
+    font-size: 1em;
     line-height: 2.5;
     padding: 15px;
     color: black;
     background-color: white;
     border-radius: 0px 0px 0px 0px;
     }
-.rvwhere:hover {
+.whereto:hover {
     background-color: red;
     }
-.rvsearch {
+.searchit {
     border: 1px solid white;
+    font-size: 1em;
     line-height: 2.5;
     padding: 15px;
     color: white;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
     }
-.rvsearch:hover {
+.searchit:hover {
     background-color: red;
     }
-.rvfilters {
+.filters {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -140,53 +152,59 @@ h4 {
     font-weight: 700;
     line-height: .5;
     padding: 5px;
-    margin: 10px;
     }
-.rvbill {
+.filter {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;;
     justify-content: flex-start;
-    border: 1px solid grey#f2f2f2;
+    border: 1px solid grey;
     border-radius: 50px;
     margin: 10px;
     }
-.bill {
+.iconic {
     height: 50px;
     width: 50px;
     background-color: F2F2;
     border-radius: 50px;
+    border: 4px solid grey;
     color: #0065FC
     
     }
-.rvbill:hover {
+.iconic:hover {
     background-color: red;
     }
-.lowcost {
-    line-height: 1;
-    font-size: 16;
+.banner {
+    line-height: 0;
+    font-size: 16px;
     margin: auto;
     padding: 0px 10px;
     background-color:white;
     border-radius: 0 30px 30px 0;
     }
-.lowcost:hover {
+.banner:hover {
     background-color: transparent;
     }
-.rvstock {
+.stock {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;;
     justify-content: flex-start;
     margin: 10px;
     }
-.info {
+
+    .fa-info {
+
+    }
+
+    .info {
     line-height: 2.5;
     padding: 0px 14px;
     background-color: F2F2;
     border-color: blue;
     border-radius: 30px;
     margin: 10px;
+    height: 11px;
     }
 .info:hover {
     background-color: red;
