@@ -1,14 +1,14 @@
-* {
+*  {
     box-sizing: border-box;
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     }
 body {
     width: 100%;
     background-color: white;
     font-family: Raleway;
     font-size: 1.2em;
-}    
+    }    
 nav {
     margin-left: 15px;
     width: 100%;
@@ -32,11 +32,11 @@ section {
 .logo {
     margin: 20px 0px 20px 30px;
     text-align: left;
-}
+    }
 .rvaccom {
     color: #0065FC;
     font-family: Helvetica;
-    width: 180px;
+    width: 150px;
     padding: 10px 0 10px 0;
     text-align: center;
     text-decoration: none;
@@ -59,13 +59,13 @@ section {
 .rvactiv {
     color: black;
     font-family: Helvetica;
-    width: 180px;
+    width: 150px;
     padding: 10px 0 10px 0;
     text-align: center;
     text-decoration: none;
     border-bottom-style: solid;
     border-bottom-color: black;
-}
+    }
 @media only screen and (min-width:700px) {
     .rvactiv {
         color: black;
@@ -77,8 +77,8 @@ section {
         border-top-style: solid;
         border-top-color: black;
         border-bottom-color: white;
+        }
     }
-}
 .signup {
     position: absolute;
     top: 0px;
@@ -111,7 +111,7 @@ h4 {
     align-items: center;
     padding: 15px;
     color: black;
-    background-color: f2f2;
+    background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
     }
 .mapmarker:hover {
@@ -146,7 +146,6 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    border: 15px solid F2F2;
     font-family: Raleway;
     font-size: 1.2rem;
     font-weight: 700;
@@ -156,23 +155,22 @@ h4 {
 .filter {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
     justify-content: flex-start;
     border: 1px solid grey;
     border-radius: 50px;
-    margin: 10px;
+    margin: 5px;
+    }
+.filter:hover {
+    background-color: red;
     }
 .iconic {
     height: 50px;
     width: 50px;
-    background-color: F2F2;
+    background-color: #DEEBFF;
     border-radius: 50px;
-    border: 4px solid grey;
-    color: #0065FC
-    
-    }
-.iconic:hover {
-    background-color: red;
+    border: 0px solid grey;
+    color: #0065FC;
     }
 .banner {
     line-height: 0;
@@ -185,35 +183,28 @@ h4 {
 .banner:hover {
     background-color: transparent;
     }
-.stock {
+.filter1 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;;
+    flex-wrap:nowrap;
     justify-content: flex-start;
-    margin: 10px;
+    padding: 0 5px 35px 0;
     }
 
-    .fa-info {
-
-    }
-
-    .info {
-    line-height: 2.5;
-    padding: 0px 14px;
-    background-color: F2F2;
-    border-color: blue;
-    border-radius: 30px;
-    margin: 10px;
-    height: 11px;
-    }
-.info:hover {
-    background-color: red;
-    }
-.count {
-    font-family: Raleway;
-    font-size: 14px;
-    line-height: 2.5;
+.iconic1 {
+    height: 30px;
+    width: 40px;
+    margin: 5px;
+    padding: 3px 0 0 10px;
     background-color:white;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    }
+.banner1 {
+    line-height: 1em;
+    padding: 10px;
+    font-size: .9em;
     }
 .checked {
     color: #0065FC;
@@ -222,100 +213,53 @@ h4 {
     color: #f2f2f2;
     }
 /* BODY    */
-.rvmedley {
+/* Accom & Most Pop flex box */
+.mostpopaccom {
     display: flex;
     flex-wrap: wrap-reverse;
     grid-gap: 10px;
+    margin-left: 0px;
     }
-.rvactmedley {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 10px;
+.fa-star {
+    font-size: 10px;
     }
-.rvpop {
-    display: flex;
-    flex-direction: column;
-    font-family: Raleway;
-    justify-content: flex-start;
-    grid-gap: 12px;
-    align-content: center;
-    padding: 10px;
-    width: 375px;
-    background-color: #f2f2f2;
-    border-color: #f2f2f2;
-    }
-.rvwrap {
-    max-width: 1035px;
-    min-width: 375;
+/* Accommodations in Marseilles */
+.accoms {
+    padding: 25px;
+    max-width: 1040px;
+    min-width: 345px;
     background-color: #f2f2f2;
     }
-.rvacts {
-    max-width: 1400px;
-    min-width: 375;
-    }
-.rvcity {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    justify-content: space-around(14px);
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-color: #f2f2f2;
-    }
-.rvact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    justify-content: space-around(14px);
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-color: #f2f2f2;
-    }
-.poptitle {
-    background-color: #f2f2f2;
-    padding: 15px;
-    }
-.citytitle {
-    /*
+.acctitle {
+    padding: 5px;
     width: 1420px;
-*/}
+    }
+.acctiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 12px;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+    }
 .pops {
     background-color: white;
+    padding: 1px;
     border-radius: 15px;
     }
-.citys {
-    background-color: white;
-    border-radius: 15px;
-    }
-.pops1a {
+.pops2a {
     border-color: white;
     border: none;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
     }
-.pops1a:hover {
-    background-color: red;
-    }
-.citys1a {
-    border-color: white;
-    border: none;
-    background-color: white;
-    border-radius: 15px;
-    }
-.citys1a:hover {
+.pops2a:hover {
     background-color: red;
     }
 .crop2 {
-    width: 120px; /* width of container */
-    height: 130px; /* height of container */
-    object-fit: cover;
-    float: left;
-    padding: 5px;
-    border-radius: 15px 0 0 15px;
-    }
-.crop3 {
     width: 320px; /* width of container */
     height:108px; /* height of container */
     object-fit: cover;
@@ -324,10 +268,130 @@ h4 {
     padding: 5px;
     border-radius: 15px 15px 0 0;
     }
+.pops2ab {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 65px;
+    padding: 5px;
+    }
+/* Most popular hotels in Marseilles */
+.mostpop {
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+    justify-content: flex-start;
+    grid-gap: 12px;
+    align-content: center;
+    padding: 20px;
+    width: 375px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    }
+.poptitle {
+    background-color: #f2f2f2;
+    padding: 5px;
+    }
+.poptile {
+    background-color: white;
+    padding: 1px;
+    border-radius: 15px;
+    }
+.pops1a {
+    border-color: white;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    }
+.pops1a:hover {
+    background-color: red;
+    }
+.crop1 {
+    width: 120px; /* width of container */
+    height: 130px; /* height of container */
+    object-fit: cover;
+    float: left;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    }
+.pops1ab {
+    display:inline-block;
+    justify-content: center;
+    text-align: left;
+    font-size: 1.2em;
+    width: 200px;
+    margin: 5px;
+    }
+/* Activities flex box */
+.activinloc {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+    }
+.activs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-gap: 15px;
+    justify-content: left;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    background-color: white;
+    }
+@media only screen and (min-width: 700px) {
+    .activs {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 500px;
+        grid-gap: 15px;
+        justify-content: left;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        background-color: white;
+        }
+        }
+.acttitle {
+    max-width: 1400px;
+    min-width: 355px;
+    padding: 20px;
+    }
+.citys {
+    background-color: white;
+    border-radius: 15px;
+    }
+.citys3a {
+    border-color: white;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    }
+.citys :hover {
+    background-color: red;
+    }
+.citys3ab {
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 0px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 0 0 15px 15px;
+    }
+/* crop3 was used in media query */
+.crop3 {
+    width: 120px; /* width of container */
+    height: 130px; /* height of container */
+    object-fit: cover;
+    float: left;
+    padding: 5px;
+    border-radius: 15px 0 0 15px;
+    }
     
 .crop4a {
     width: 320px; /* width of container */
-    height:432px; /* height of container */
+    height:377px; /* height of container */
     object-fit: cover;
     object-position: 30% 50%; /* try 20px 10px */ 
     float: inline-start;
@@ -354,7 +418,7 @@ h4 {
     }
 .crop4d {
     width: 320px; /* width of container */
-    height:432px; /* height of container */
+    height:377px; /* height of container */
     object-fit: cover;
     object-position: 30% 50%; /* try 20px 10px */ 
     float: inline-start;
@@ -381,36 +445,21 @@ h4 {
     border-radius: 15px 15px 0 0;
 }
         
-.pops1ab {
-display:inline-block;
-text-align: left;
-font-size: 18;
-width: 200px;
-margin: 5px;
-    }
-.pops2ab {
-    text-align: left;
-    font-size: 18px;
-    margin-left: 15px;
-    height: 5;
-    padding: 5px;
-    }
-.citys2ab {
-    text-align: left;
-    font-size: 1.2em;
-    margin-left: 0px;
-    height: 15;
-    padding: 5px;
-    border-radius: 0 0 15px 15px;
-    }
-.fa-star {
-    font-size: 10px;
-    }
 .city1a {
     padding: 0px;
     border: 1px;
     border-radius: 20px;
     }
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+    .crop4a, .crop4b, .crop4c, .crop4d, .crop4e, .crop4f  {
+        width: 320px; /* width of container */
+        height:108px; /* height of container */
+        object-fit: cover;
+        float: inline-start;
+        padding: 5px;
+        border-radius: 15px 15px 0 0;
+    }
+} 
 /* FOOTER  */
 .rvfoot {
     display: flex; 
@@ -418,7 +467,7 @@ margin: 5px;
     justify-content: center;
     font-family: Raleway;
     font-size: .6rem;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     background-color: #f2f2f2;
     }
 .rvfoot1 {
@@ -433,14 +482,3 @@ margin: 5px;
 .foot1a:hover {
     background-color: red;
     }
-@media only screen and (min-width: 320px) and (max-width: 1000px) {
-    .crop4a, .crop4b, .crop4c, .crop4d, .crop4e, .crop4f  {
-        width: 320px; /* width of container */
-        height:108px; /* height of container */
-        object-fit: cover;
-        object-position: 30% 50%; /* try 20px 10px */ 
-        float: inline-start;
-        padding: 5px;
-        border-radius: 15px 15px 0 0;
-     }
-}

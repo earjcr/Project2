@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html: lang="en"></html:>
+<html lang="en">
 <head>
     <title>Reservia</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.0-web/fontawesome-free-5.15.0-web copy/css/all.css">
+    <!--<link rel="stylesheet" href="C:\Users\earjc\OneDrive\Documents\GitHub\Project2\Travelry\fontawesome-free-5.15.0-web"> -->
     <meta charset="UTF-8">  <!-- From Intro to HTML5 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,15 +18,6 @@
             <a href="#activities"     class="rvactiv">Activities    </a>
         </div>
         <a href="#" class="signup"><strong>Sign Up</strong></a>
-        <!-- -->
-        <!-- USE THIS CODING FOR WHEN SCREEN SIZE IS SMALLER 
-        <a href="#"><img class="logo" src="images/logo/Reservia.svg"></a>
-        <div class="menu"> 
-            <a href="#accommodations" class="rvaccom">Accommodations</a>
-            <a href="#activities"     class="rvactiv">Activities    </a>
-        </div>
-        <a href="#" class="signup"><strong>Sign Up</strong></a>
-         -->
     </header> 
     <nav>
         <h2>Find a place for your dream vacation</h2>
@@ -54,30 +45,35 @@
                 <div class="banner"><strong>Romantic       </strong></div>
             </div>
             <div class="filter">
-                <div><button class="iconic" type="button"><i class="fas fa-dog"></i></div>
+                <div><button class="iconic" type="button"><i class="fas fa-dog  "></i></div>
+                <div class="banner"><strong>Pets allowed   </strong></div>
+            </div>
+            <!-- ATTEMPTED RE-WRITE OF FILTER (& STOCK) -->
+            <div><button class="filter" type="button">
+                <div class="iconic"><i class="fas fa-dog"></i></div>
                 <div class="banner"><strong>Pets allowed   </strong></div>
                 </button>
             </div>
         </div>
-
-        <div class="stock">
-                <i class="fas fa-info"><strong>More than 500 accomodations are available in this location</strong></i>
-            
+        <br>
+        <div class="filter1">
+            <div class="iconic1"><i class="fas fa-info"></i></div>
+            <div class="banner1">More than 500 accomodations are available in this location</div>
         </div>
     </nav>
-    <div class="rvmedley">
-        <div class="rvwrap">
-            <div class="citytitle" id="accommodations">
+    <div class="mostpopaccom">
+        <div class="accoms">
+            <div class="acctitle" id="accommodations">
                 <p><strong>Accommodations in Marseilles</strong><br>
                 </p>
             </div> 
-            <div class="rvcity">
+            <div class="acctiles">
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                         <div class=pops2ab>
-                            <strong>Auberge la Cannebiere</strong>><br>
-                            Night starting at <strong>25€</strong>><br>
+                            <strong>Auberge la Cannebiere</strong><br>
+                            Night starting at <strong>25€</strong><br>
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
@@ -87,8 +83,8 @@
                     </button>
                 </article>
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                         <div class="pops2ab">
                             <strong>Hotel du port</strong><br>
                             Night starting at <strong>52€</strong><br>
@@ -101,8 +97,8 @@
                     </button>
                 </article>
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\reisetopia-B8WIgxA_PFU-unsplash.jpg">
                         <div class="pops2ab">
                             <strong>Les mouettes Hotel</strong><br>
                             Night starting at <strong>76€</strong><br>
@@ -115,8 +111,8 @@
                     </button>
                 </article>
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                         <div class="pops2ab">
                             <strong>Hotel de la mer</strong><br>
                             Night starting at <strong>46€</strong><br>
@@ -129,8 +125,8 @@
                     </button>
                 </article>
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                         <div class="pops2ab">
                             <strong>Auberge Le Panier</strong><br>
                             Night starting at <strong>23€</strong><br>
@@ -143,8 +139,8 @@
                     </button>
                 </article>
                 <article class="pops" type="button">
-                    <button class="pops1a">
-                        <img class="crop3" src="images\hebergements\1_xlarge\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="80">
+                    <button class="pops2a">
+                        <img class="crop2" src="images\hebergements\1_xlarge\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="80">
                         <div class="pops2ab">
                             <strong>Hotel chez Amina</strong><br>
                             Night starting at <strong>96€</strong><br>
@@ -157,20 +153,20 @@
                     </button>
                 </article>
             </div>
-            <div class="citytitle" id="city99">
+            <div class="acctitle" id="city99">
                 <p1><strong>Show more...</strong>
                 </p1>
             </div>
         </div>
-        <div class="rvpop">
+        <div class="mostpop">
             <div class="poptitle">
                 <p></p><strong>Most Popular</strong>
                 <i class="fa fa-chart-line"></i>
             </p>
             </div>
-            <div class="pops" type="button">
+            <div class="poptile" type="button">
                 <button class="pops1a">
-                    <img class="crop2" src="images\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    <img class="crop1" src="images\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                     <div class=pops1ab>
                         <strong>Morning Sun Hotel</strong>
                         <br><br>Night starting at <strong>128€</strong><br><br>
@@ -182,9 +178,9 @@
                     </div>
                 </button>
             </div>
-            <div class="pops" type="button">
+            <div class="poptile" type="button">
                 <button class="pops1a">
-                    <img class="crop2" src="images\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg">
+                    <img class="crop1" src="images\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg">
                     <div class="pops1ab">
                         <strong>Au coeur de l'Eau Bed and Breakfast</strong>
                         <br><br>Night starting at <strong>71€</strong><br><br>
@@ -196,9 +192,9 @@
                     </div>
                 </button>
             </div> 
-            <div class="pops" type="button">
+            <div class="poptile" type="button">
                 <button class="pops1a">
-                    <img class="crop2" src="images\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                    <img class="crop1" src="images\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                     <div class="pops1ab">
                         <strong>Tout bleu et Blanc Hotel</strong>
                         <br><br>Night starting at <strong>68€</strong><br><br>
@@ -212,63 +208,62 @@
             </div>
         </div>
     </div>
-    <div class="rvactmedley">
-        <div class="rvacts">
-            <div class="citytitle" id="activities">
-                <p><br><strong>Activites in Marseilles</strong><br></p>
+            <div class="acttitle" id="activities">
+                <p><strong>Activities in Marseilles</strong><br>
+                </p>
             </div>
-            <article class="citys" id="activ1" type="button">
-                <button class="citys1a">
-                    <img class="crop4a" src="images\activites\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Old Port</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-            <article class="citys" id="activ2" type="button">
-                <button class="citys1a">
-                    <img class="crop4b" src="images\activites\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Pornegues Fort</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-            <article class="citys" id="activ3" type="button">
-                <button class="citys1a">
-                    <img class="crop4c" src="images\activites\1_xlarge\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Friout Island</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-            <article class="citys" id="activ4" type="button">
-                <button class="citys1a">
-                    <img class="crop4d" src="images\activites\1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Calanques National Park</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-            <article class="citys" id="activ5" type="button">
-                <button class="citys1a">
-                    <img class="crop4e" src="images\activites\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Notre-Dame-de-la-Garde</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-            <article class="citys" id="activ6" type="button">
-                <button class="citys1a">
-                    <img class="crop4f" src="images\activites\1_xlarge\lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                    <div class="citys2ab">
-                        <p1><strong>Longchamp Park</strong><br></p1>
-                    </div>
-                </button>
-            </article>
-        </div>
+            <div class="activs">
+                <article class="citys" id="activ1" type="button">
+                    <button class="citys3a">
+                        <img class="crop4a" src="images\activites\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Old Port</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+                <article class="citys" id="activ2" type="button">
+                    <button class="citys3a">
+                        <img class="crop4b" src="images\activites\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Pornegues Fort</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+                <article class="citys" id="activ3" type="button">
+                    <button class="citys3a">
+                        <img class="crop4c" src="images\activites\1_xlarge\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Friout Island</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+                <article class="citys" id="activ4" type="button">
+                    <button class="citys3a">
+                        <img class="crop4d" src="images\activites\1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Calanques National Park</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+                <article class="citys" id="activ5" type="button">
+                    <button class="citys3a">
+                        <img class="crop4e" src="images\activites\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Notre-Dame-de-la-Garde</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+                <article class="citys" id="activ6" type="button">
+                    <button class="citys3a">
+                        <img class="crop4f" src="images\activites\1_xlarge\lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                        <div class="citys3ab">
+                            <p1><strong>Longchamp Park</strong><br></p1>
+                        </div>
+                    </button>
+                </article>
+            </div>
         <div><br><br></div>
     </div>
-        -->
     <footer>
         <div class="rvfoot">
             <article class="rvfoot1">
