@@ -167,6 +167,7 @@ h4 {
 .iconic {
     height: 50px;
     width: 50px;
+    padding: 15px;
     background-color: #DEEBFF;
     border-radius: 50px;
     border: 0px solid grey;
@@ -174,7 +175,7 @@ h4 {
     }
 .banner {
     line-height: 0;
-    font-size: 16px;
+    font-size: 1em;
     margin: auto;
     padding: 0px 10px;
     background-color:white;
@@ -183,17 +184,16 @@ h4 {
 .banner:hover {
     background-color: transparent;
     }
-.filter1 {
+.filteri {
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
     justify-content: flex-start;
-    padding: 0 5px 35px 0;
+    padding: 0 5px 5px 0;
     }
-
-.iconic1 {
+.iconici {
     height: 30px;
-    width: 40px;
+    width: 30px;
     margin: 5px;
     padding: 3px 0 0 10px;
     background-color:white;
@@ -201,7 +201,7 @@ h4 {
     border: 1px solid #F2F2F2;
     color: #0065FC;
     }
-.banner1 {
+.banneri {
     line-height: 1em;
     padding: 10px;
     font-size: .9em;
@@ -218,7 +218,6 @@ h4 {
     display: flex;
     flex-wrap: wrap-reverse;
     grid-gap: 10px;
-    margin-left: 0px;
     }
 .fa-star {
     font-size: 10px;
@@ -226,7 +225,7 @@ h4 {
 /* Accommodations in Marseilles */
 .accoms {
     padding: 25px;
-    max-width: 1040px;
+    max-width: 1060px;
     min-width: 345px;
     background-color: #f2f2f2;
     }
@@ -238,7 +237,7 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    grid-gap: 12px;
+    grid-gap: 18px;
     justify-content: left;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -292,6 +291,9 @@ h4 {
     background-color: #f2f2f2;
     padding: 5px;
     }
+.floater {
+    float: right;
+}
 .poptile {
     background-color: white;
     padding: 1px;
@@ -319,7 +321,7 @@ h4 {
     display:inline-block;
     justify-content: center;
     text-align: left;
-    font-size: 1.2em;
+    font-size: .9em;
     width: 200px;
     margin: 5px;
     }
@@ -336,7 +338,7 @@ h4 {
     grid-gap: 15px;
     justify-content: left;
     justify-content: space-around;
-    padding-bottom: 20px;
+    padding: 25px;
     background-color: white;
     }
 @media only screen and (min-width: 700px) {
