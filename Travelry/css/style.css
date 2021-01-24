@@ -366,6 +366,7 @@ h4 {
     border: none;
     background-color: white;
     border-radius: 10px;
+    width: 320px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
     }
 .citys :hover {
@@ -373,12 +374,17 @@ h4 {
     }
 .citys3ab {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 0px;
     height: 35px;
     padding: 5px;
     border-radius: 0 0 15px 15px;
     }
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* crop3 was used in media query */
 .crop3 {
     width: 120px; /* width of container */
